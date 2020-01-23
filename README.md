@@ -33,6 +33,7 @@ container.
 3) > now run the url in the browser "http://localhost:8080/hello"
 
 More Commands: 
+--------------
 docker images ls (to list all images)  
 docker image rm <image-name>  (to delete the image)  
 docker container ls  (to check all containers running or stopped)  
