@@ -1,31 +1,26 @@
 # Getting Started
 
-# HTTP GET:: URLS
+HTTP GET:: URLS:
+----------------
+http://localhost:8080/hello  
+http://localhost:8080/  
+http://localhost:8080/health  
 
-http://localhost:8080/hello
-
-http://localhost:8080/
-
-http://localhost:8080/health
-
-# Docker Commands
-
+Docker Commands:
+----------------
 1) > docker build -f Dockerfile -t escortnotice/hello-openshift:v1.0 .
 
--f is for the docker file name
-
--t is the image tag name that will be build
-
-. (DOT) represents the current directory where the project is present.
+-f is for the docker file name  
+-t is the image tag name that will be build  
+. (DOT) represents the current directory where the project is present.  
 
 The above command will create a docker image.The docker image name should always 
 be in lower case. This command should be run in the folder where the "Dockerfile" exists.
 
 2) > docker run --name hello-openshift-app -p 8080:8080 escortnotice/hello-openshift:v1.0
 
---name is used to give the name of the container
-
--p is for port(container:hostmachine) forwarding from the container to the host machine where the container runs 
+--name is used to give the name of the container  
+-p is for port(container:hostmachine) forwarding from the container to the host machine where the container runs   
 
 Then give the name of the image:<version of the image> from which you want to create the 
 container.
