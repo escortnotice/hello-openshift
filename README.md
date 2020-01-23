@@ -3,7 +3,9 @@
 # HTTP GET:: URLS
 
 http://localhost:8080/hello
+
 http://localhost:8080/
+
 http://localhost:8080/health
 
 # Docker Commands
