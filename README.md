@@ -10,7 +10,7 @@ http://localhost:8080/
 http://localhost:8080/health  
 
 Docker Commands:
-----------------
+=================
 1) > docker build -f Dockerfile -t escortnotice/hello-openshift:v1.0 .
 
 -f is for the docker file name  
@@ -30,8 +30,8 @@ container.
 
 3) > now run the url in the browser "http://localhost:8080/hello"
 
-More Commands: 
---------------
+More Docker Commands: 
+--------------------
 docker images ls (to list all images)  
 docker image rm <image-name>  (to delete the image)  
 docker container ls  (to check all containers running or stopped)  
