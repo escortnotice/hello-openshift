@@ -5,7 +5,7 @@ FROM openjdk:8
 WORKDIR /usr/src/app
 
 # copies the jar file from the target directory to the "usr/src/app" directory
-COPY target/hello-openshift-0.0.1-SNAPSHOT.jar hello-openshift-0.0.1-SNAPSHOT.jar
+COPY ./target/hello-openshift-0.0.1-SNAPSHOT.jar hello-openshift-0.0.1-SNAPSHOT.jar
 
 # expose the app to port 8080
 EXPOSE 8080
