@@ -1,3 +1,4 @@
+# dowload the openjdk version8image
 FROM openjdk:8
 
 # sets the working directory to /usr/src/app
