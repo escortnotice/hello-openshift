@@ -9,7 +9,7 @@ public class HelloOpenShiftRestController {
 	@RequestMapping("/hello")
 	public String helloOpenShift() {
 		
-		return "{"+"\"message\":"+ "\"Hello OpenShift!\"" + "}";
+		return "{"+"\"message\":"+ "\"Hola, from OpenShift!\"" + "}";
 	}
 	
 	@RequestMapping("/health")
