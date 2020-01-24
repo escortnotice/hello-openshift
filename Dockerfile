@@ -7,6 +7,9 @@ WORKDIR /usr/src/app
 # Copy all the contents of current folder(the project files) to /usr/src/app folder
 COPY . .
 
+# give execute permission to "mvnw" executable
+RUN chmod 700 mvnw
+
 # run the maven command to clean and package the app as jar
 RUN ./mvnw clean package
 
