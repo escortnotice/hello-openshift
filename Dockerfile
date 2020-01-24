@@ -1,14 +1,17 @@
-# dowload the openjdk version8image
+# download the openjdk version8image
 FROM openjdk:8
+
+# make this the working directory, hereon all commands will be run here by default
+WORKDIR /usr/src/app
+
+# Copy all the contents of current folder(the project files) to /usr/src/app folder
+COPY . .
+
+# run the maven command to clean and package the app as jar
+RUN ./mvnw clean package
 
 # copies the jar file from the target directory to the "usr/src/app" directory
 COPY ./target/hello-openshift-0.0.1-SNAPSHOT.jar hello-openshift-0.0.1-SNAPSHOT.jar
-
-#run mvn command to clean the target directory and build the jar
-./mvnw clean package
-
-# sets the working directory to /usr/src/app
-WORKDIR /usr/src/app
 
 # expose the app to port 8080
 EXPOSE 8080
