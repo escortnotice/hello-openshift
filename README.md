@@ -1,7 +1,10 @@
-# Getting Started
+Getting Started
+==========================
 
-HTTP GET:: URLS:
-----------------
+URLS:
+==========================
+HTTP GET:
+-------------------------
 http://localhost:8080/hello  
 http://localhost:8080/  
 http://localhost:8080/health  
