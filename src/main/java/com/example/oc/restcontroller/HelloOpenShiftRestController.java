@@ -1,6 +1,7 @@
 package com.example.oc.restcontroller;
 
 import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,9 +22,8 @@ public class HelloOpenShiftRestController {
 	}
 	
 	@RequestMapping("/")
-	public String welcome() {
+	public String welcome() throws UnknownHostException {
 		 String ip = InetAddress.getLocalHost().getHostName();
-         System.out.println("Your current Hostname : " + ip);
-		return "{"+"\"message\":"+ "\"Bonjour to SpringBoot app on Openshift!\"" + "}";
+		return "{"+"\"message\":"+ "\"Bonjour to SpringBoot app on Openshift!\"" +", ip="+ip+ "}";
 	}
 }
