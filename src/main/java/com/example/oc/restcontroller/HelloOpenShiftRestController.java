@@ -21,6 +21,6 @@ public class HelloOpenShiftRestController {
 	@RequestMapping("/")
 	public String welcome() {
 		
-		return "{"+"\"message\":"+ "\"Welcome to SpringBoot app on Openshift!\"" + "}";
+		return "{"+"\"message\":"+ "\"Bonjour to SpringBoot app on Openshift!\"" + "}";
 	}
 }
