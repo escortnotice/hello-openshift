@@ -1,5 +1,7 @@
 package com.example.oc.restcontroller;
 
+import java.net.InetAddress;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +22,8 @@ public class HelloOpenShiftRestController {
 	
 	@RequestMapping("/")
 	public String welcome() {
-		
+		 String ip = InetAddress.getLocalHost().getHostName();
+         System.out.println("Your current Hostname : " + ip);
 		return "{"+"\"message\":"+ "\"Bonjour to SpringBoot app on Openshift!\"" + "}";
 	}
 }
