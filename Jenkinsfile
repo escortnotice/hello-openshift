@@ -40,7 +40,7 @@ pipeline {
 
           echo("OCP: ${env.OCP}")
 
-          //script { 
+          script { 
 
             currentBuild.displayName = "${BUILD_NUMBER} - Build HelloOpenshiftApp - ${OCP}"
             echo("currentBuild.displayName: ${currentBuild.displayName}")
@@ -48,7 +48,7 @@ pipeline {
             currentBuild.description = "${BRANCH} - ${GIT_COMMIT}"   
             echo("currentBuild.description: ${currentBuild.description}")
 
-         // }    
+          }    
 
         //}
 
