@@ -36,10 +36,11 @@ pipeline {
 
           script { 
 
-            currentBuild.displayName = "${BUILD_NUMBER} - Build Zookeeper - ${OCP}"
+            currentBuild.displayName = "${BUILD_NUMBER} - Build HelloOpenshiftApp - ${OCP}"
             echo("currentBuild.displayName: ${currentBuild.displayName}")
 
-            currentBuild.description = "${BRANCH} - ${GIT_COMMIT}"    
+            currentBuild.description = "${BRANCH} - ${GIT_COMMIT}"   
+            echo("currentBuild.description: ${currentBuild.description}")
 
           }    
 
