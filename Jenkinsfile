@@ -37,7 +37,7 @@ pipeline {
           script { 
 
             currentBuild.displayName = "${BUILD_NUMBER} - Build Zookeeper - ${OCP}"
-            echo("currentBuild: ${currentBuild.displayName}")
+            echo("currentBuild.displayName: ${currentBuild.displayName}")
 
             currentBuild.description = "${BRANCH} - ${GIT_COMMIT}"    
 
