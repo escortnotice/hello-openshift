@@ -28,7 +28,13 @@ pipeline {
 
       steps { 
 
-        echo "Set Build Name"        
+        echo "Set Build Name" 
+
+        echo("OCP_CRED: ${OCP_CRED}")  
+        echo("IMAGE_TAG: ${IMAGE_TAG}")      
+        echo("BRANCH: ${BRANCH}")  
+        echo("ARTIFACTORY_DOCKER_CRED: ${ARTIFACTORY_DOCKER_CRED}")  
+
 
         withFolderProperties{
 
