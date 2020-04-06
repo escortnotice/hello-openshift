@@ -38,7 +38,7 @@ pipeline {
 
         //withFolderProperties{
 
-          echo("OCP: ${env.OCP}")
+         // echo("OCP: ${env.OCP}")
 
           //script { 
 
