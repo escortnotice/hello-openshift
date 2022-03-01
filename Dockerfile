@@ -8,10 +8,10 @@ WORKDIR /usr/src/app
 COPY . .
 
 # give execute permission to "mvnw" executable
-RUN chmod 700 mvnw
+#RUN chmod 700 mvnw
 
 # run the maven command to clean and package the app as jar
-RUN ./mvnw clean package
+#RUN ./mvnw clean package
 
 # copies the jar file from the target directory to the "usr/src/app" directory
 #COPY ./target/hello-openshift-0.0.1-SNAPSHOT.jar hello-openshift-0.0.1-SNAPSHOT.jar
