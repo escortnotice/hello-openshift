@@ -1,5 +1,5 @@
 # download the openjdk version8image
-FROM openjdk18-openshift-ups:latest
+FROM openjdk
 
 # make this the working directory, hereon all commands will be run here by default
 WORKDIR /usr/src/app
