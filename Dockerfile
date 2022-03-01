@@ -1,5 +1,5 @@
 # download the openjdk version8image
-FROM redhat-openjdk-18/openjdk18-openshift
+FROM registry.redhat.io/redhat-openjdk-18/openjdk18-openshift
 
 # make this the working directory, hereon all commands will be run here by default
 WORKDIR /usr/src/app
