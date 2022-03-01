@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 # give execute permission to "mvnw" executable
-#RUN chmod 700 mvnw
+RUN chmod 700 mvnw
 
 # run the maven command to clean and package the app as jar
 RUN ./mvnw clean package
